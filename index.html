@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inteligencia Artificial con Propósito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --card-bg: #ffffff;
+      --text-main: #2d3748;
+      --text-muted: #64748b;
+      --primary: #2563eb;
+      --primary-soft: #eff6ff;
+      --accent-coral: #f43f5e;
+      --accent-teal: #0d9488;
+      --accent-amber: #d97706;
+      --border: #e2e8f0;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .main-card {
+      background: var(--card-bg);
+      border-radius: 24px;
+      padding: 48px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: var(--primary-soft);
+      color: var(--primary);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+
+    .intro-text {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .feature-card {
+      background-color: var(--bg);
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid #f1f5f9;
+    }
+
+    .feature-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .feature-card.blue h3 { color: var(--primary); }
+    .feature-card.coral h3 { color: var(--accent-coral); }
+    .feature-card.teal h3 { color: var(--accent-teal); }
+    .feature-card.amber h3 { color: var(--accent-amber); }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
+
+    .tips-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .tips-list li {
+      background-color: var(--bg);
+      padding: 20px;
+      border-radius: 12px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .icon-box {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .reflection-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+      padding: 32px;
+      border-radius: 16px;
+      border: 1px solid #dbeafe;
+    }
+
+    .reflection-box h3 {
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .main-card {
+        padding: 24px;
+      }
+      h1 {
+        font-size: 1.875rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="main-card">
+      <span class="badge">Propuesta Digital Educativa</span>
+      
+      <h1>Inteligencia Artificial con Propósito</h1>
+      
+      <p class="intro-text">
+        La Inteligencia Artificial está transformando la forma en que estudiamos, investigamos y nos expresamos en internet, por lo cual es importante aprender a utilizarla de manera responsable, ética y crítica para potenciar nuestro conocimiento sin perder nuestro toque humano, auténtico y propio.
+      </p>
+
+      <div class="grid">
+        <div class="feature-card blue">
+          <h3>🤖 Tema Principal</h3>
+          <p>Uso ético y consciente de las herramientas de Inteligencia Artificial en nuestras tareas escolares y creadoras del día a día.</p>
+        </div>
+
+        <div class="feature-card coral">
+          <h3>🎯 Propósito</h3>
+          <p>Orientar a estudiantes y jóvenes sobre el uso correcto de la tecnología, promoviendo el pensamiento crítico y el respeto a la autoría.</p>
+        </div>
+
+        <div class="feature-card teal">
+          <h3>👥 Audiencia</h3>
+          <p>Comunidad escolar, compañeros de clase, profesores y familias interesadas en aprender a convivir sanamente con la IA.</p>
+        </div>
+
+        <div class="feature-card amber">
+          <h3>💡 Mensaje Central</h3>
+          <p>La inteligencia artificial es un copiloto para tus ideas, no un reemplazo para tu mente, pensamiento propio ni voz personal.</p>
+        </div>
+      </div>
+
+      <h2 class="section-title">Recomendaciones para un Uso Ético</h2>
+
+      <ul class="tips-list">
+        <li>
+          <span class="icon-box">🔍</span>
+          <div>
+            <strong>Verifica siempre la información:</strong> La IA puede cometer errores o inventar datos, por eso siempre debemos consultar fuentes reales y confiables antes de compartir cualquier respuesta.
+          </div>
+        </li>
+        <li>
+          <span class="icon-box">✍️</span>
+          <div>
+            <strong>Dale tu propio estilo y voz:</strong> Utiliza las respuestas de la IA como un borrador o guía inicial, pero edita, reescribe y aporta tus propias reflexiones para que el trabajo sea verdaderamente tuyo.
+          </div>
+        </li>
+        <li>
+          <span class="icon-box">🛡️</span>
+          <div>
+            <strong>Protege tus datos personales:</strong> Nunca compartas nombres completos, contraseñas, fotos privadas ni información sensible en las herramientas de IA abiertas.
+          </div>
+        </li>
+        <li>
+          <span class="icon-box">🤝</span>
+          <div>
+            <strong>Aporta transparencia y honestidad:</strong> Si utilizas Inteligencia Artificial para investigar o estructurar un trabajo, reconócelo con madurez y menciona cómo te ayudó en tu proceso.
+          </div>
+        </li>
+      </ul>
+
+      <div class="reflection-box">
+        <h3>Reflexión Final</h3>
+        <p>
+          Las herramientas digitales y la inteligencia artificial son recursos extraordinarios para aprender y crear, pero el verdadero impacto positivo depende siempre de nuestras decisiones, valores, empatía y sentido de responsabilidad compartida dentro de la comunidad.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
